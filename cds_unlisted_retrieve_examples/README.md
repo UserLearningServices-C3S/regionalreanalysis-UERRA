@@ -1,14 +1,14 @@
-# MARS retrieval examples
-All data produced within the Copernicus Climate Change Service regional reanalysis for Europe and the pre-operational UERRA project are publicly available for download via the ECMWF MARS system. These are example python scripts for retrieving temperature and 24 hour precipitation data. Please note that these requests can result in the retrieval of a lot of data.
+# CDS unlisted data retrieval examples
+All data produced within the Copernicus Climate Change Service regional reanalysis for Europe and the pre-operational UERRA project are publicly available for download via the Copernicus Climate Data Store API (CDS API).
+These are example scripts for retrieving UERRA data that are not included in the [CDS listed datasets](https://cds.climate.copernicus.eu/cdsapp#!/search?type=dataset&text=uerra).
 
-Before running these scripts it is recommended to explore the available data and the corresponding MARS requests via Web-MARS:<br />
+The request syntax is based on the ECMWF MARS retrieval system. Before running these scripts it is recommended to explore the available data and the corresponding MARS requests via Web-MARS:<br />
 [UERRA-HARMONIE data in Web-MARS](http://apps.ecmwf.int/datasets/data/uerra/levtype=sfc/stream=oper/type=an/)<br />
 [MESCAN-SURFEX data in Web-MARS](http://apps.ecmwf.int/datasets/data/uerra-mescan-surfex/levtype=sfc/stream=oper/type=an/)<br />
 Then modify the time, parameters, levels etc. in the scripts to match your specific needs.
 
-The examples provided here use the python ECMWF Web-API client.
-Information about prerequisites for running these examples can be found at the [ECMWF website](https://software.ecmwf.int/wiki/display/WEBAPI/Access+ECMWF+Public+Datasets).
-The examples are based on the [UERRA SMHI retrieval efficiency Web-API example](https://software.ecmwf.int/wiki/display/WEBAPI/UERRA+SMHI+retrieval+efficiency).
+The examples provided here use the python CDS API client.
+Information about prerequisites for running these examples can be found at the [CDS website](https://cds.climate.copernicus.eu/api-how-to).
 
 ## General information
 This project contains example code for users of the Copernicus Climate Change Service regional reanalysis for Europe (C3S_322_Lot1) data.
