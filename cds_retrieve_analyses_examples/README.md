@@ -1,9 +1,10 @@
-# CDS listed data retrieval examples
-All data produced within the Copernicus Climate Change Service regional reanalysis for Europe and the pre-operational UERRA project are publicly available for download via the Copernicus Climate Data Store API (CDS API).
-This is an example of retrieving UERRA data from one of the [CDS listed datasets](https://cds.climate.copernicus.eu/cdsapp#!/search?type=dataset&text=uerra). For retrieving UERRA data that are not listed in the CDS, use the examples in the ["cds_unlisted_retrieve_examples"](./../cds_unlisted_retrieve_examples/) folder.
+# CDS analyses data retrieval examples
+All data produced within the Copernicus Climate Change Service regional reanalysis for Europe and the pre-operational UERRA project are publicly available for download.
+
+This is an example of retrieving UERRA analyses data from one of the [CDS listed datasets](https://cds.climate.copernicus.eu/cdsapp#!/search?type=dataset&text=uerra). Please note that only the analyses are available via CDS. All other data (e.g. hourly forecasts) must be downloaded via the ECMWF MARS system. See examples in the ["mars_retrieve_examples"](./../mars_retrieve_examples/) folder.
 
 Before running this script it is recommended to explore the available data and the corresponding CDS API requests by browsing the [CDS datasets](https://cds.climate.copernicus.eu/cdsapp#!/search?type=dataset&text=uerra).
-Then modify the time, parameters, levels etc. in the script to match your specific needs.
+Then modify the time, parameter and data origin in the script to match your specific needs.
 
 The example provided here uses the python CDS API client.
 Information about prerequisites for running this example can be found at the [CDS website](https://cds.climate.copernicus.eu/api-how-to).

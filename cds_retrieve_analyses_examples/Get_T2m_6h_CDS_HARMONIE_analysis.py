@@ -5,10 +5,10 @@ import calendar
 
 c = cdsapi.Client()
 
-def retrieve_uerra_eswi():
+def retrieve_uerra():
     """
        A function to demonstrate how to iterate over several years and months etc
-       for a particular UERRA request for origin SMHI.
+       for a particular UERRA request for origin UERRA-HARMONIE.
        Change the variables below to adapt the iteration to your needs.
        You can use the variable 'targetFile' to organise the requested data in files as you wish.
        In the example below the data are organised in files per month.
@@ -24,17 +24,18 @@ def retrieve_uerra_eswi():
             requestDates = ['{:02}'.format(i) for i in range(1, numberOfDays+1)]
             requestMonth = '{:02}'.format(month)
             requestYear = '{:04}'.format(year)
-            uerra_eswi_request(requestYear, requestMonth, requestDates, targetFile)
+            uerra_request(requestYear, requestMonth, requestDates, targetFile)
 
-def uerra_eswi_request(reqYear, reqMonth, reqDates, target):
+
+def uerra_request(reqYear, reqMonth, reqDates, target):
     """
         A UERRA request for 2 metre temperature every 6th hour.
-        Origin SMHI, surface level, analysis fields.
+        Origin uerra_harmonie, surface level, analysis fields.
         Request cost per day is 4 fields, 1.8 Mbytes.
     """
 
     c.retrieve(
-        'reanalysis-uerra-single-levels',
+        'reanalysis-uerra-europe-single-levels',
         {
             'format':'grib',
             'variable':'2m_temperature',
@@ -42,9 +43,9 @@ def uerra_eswi_request(reqYear, reqMonth, reqDates, target):
             'month':reqMonth,
             'day':reqDates,
             'time':['00:00','06:00','12:00','18:00'],
-            'origin':'smhi'
+            'origin':'uerra_harmonie'
         },
         target)
 
 if __name__ == '__main__':
-    retrieve_uerra_eswi()
+    retrieve_uerra()

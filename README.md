@@ -6,19 +6,15 @@ The reanalysis data used here were initially produced within the FP7 pre-operati
 More information about the reanalyses systems and data can be found at the [UERRA website](http://www.uerra.eu/).
 
 ## CDS retrieval examples
-All data produced within the Copernicus Climate Change Service regional reanalysis for Europe and the pre-operational UERRA project are publicly available for download via the Copernicus Climate Data Store API (CDS API).
+All data produced within the Copernicus Climate Change Service regional reanalysis for Europe and the pre-operational UERRA project are publicly available for download. The analyses are listed in the [Copernicus Climate Data Store (CDS)](https://cds.climate.copernicus.eu/cdsapp#!/search?type=dataset&text=uerra) and can be downloaded via the Copernicus Climate Data Store API (CDS API).
 The examples provided here use the python CDS API client.
 Information about prerequisites for running these examples can be found at the [CDS website](https://cds.climate.copernicus.eu/api-how-to).
 
-The folder ["cds_listed_retrieve_examples"](cds_listed_retrieve_examples/) contains an example python script for retrieving CDS listed data from the Copernicus Climate Change Service regional reanalysis for Europe reanalysis via the CDS API.<br />This is an example of the syntax used for retrieving data that are listed as [CDS datasets](https://cds.climate.copernicus.eu/cdsapp#!/search?type=dataset&text=uerra).<br />
+The folder ["cds_retrieve_analyses_examples"](cds_retrieve_analyses_examples/) contains an example python script for retrieving analysis data from the Copernicus Climate Change Service regional reanalysis for Europe via the CDS API.<br />
 Modify the date, time and parameter to match your specific needs.
 
-The folder ["cds_unlisted_retrieve_examples"](cds_unlisted_retrieve_examples/) contains example python scripts for retrieving unlisted data from the Copernicus Climate Change Service regional reanalysis for Europe reanalysis via the CDS API.<br />These are examples of the syntax used for retrieving data that are not listed as [CDS datasets](https://cds.climate.copernicus.eu/cdsapp#!/search?type=dataset&text=uerra).<br />
-Modify the time, parameters, levels etc. to match your specific needs.
-
-
 ## MARS retrieval examples
-All the data produced are still also publicly available for download via the ECMWF MARS system.
+All the data produced are publicly available for download via the ECMWF MARS system.
 The examples provided here uses the python ECMWF Web-API client.
 Information about prerequisites for running these examples can be found at the [ECMWF website](https://software.ecmwf.int/wiki/display/WEBAPI/Access+ECMWF+Public+Datasets).
 
