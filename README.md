@@ -13,7 +13,7 @@ Information about prerequisites for running these examples can be found at the [
 The folder ["cds_retrieve_analyses_examples"](cds_retrieve_analyses_examples/) contains an example python script for retrieving analysis data from the Copernicus Climate Change Service regional reanalysis for Europe via the CDS API.<br />
 Modify the date, time and parameter to match your specific needs.
 
-The folder ["cds_retrieve_complete_examples"](cds_retrieve_analyses_examples/) contains example python scripts for retrieving forecast data from the Copernicus Climate Change Service regional reanalysis for Europe via the CDS API.<br />
+The folder ["cds_retrieve_complete_examples"](cds_retrieve_complete_examples/) contains example python scripts for retrieving forecast data from the Copernicus Climate Change Service regional reanalysis for Europe via the CDS API.<br />
 Modify the date, time and parameter to match your specific needs.
 
 ## MARS retrieval examples
