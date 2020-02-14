@@ -27,5 +27,8 @@ Modify the time, parameters, levels etc. to match your specific needs.
 The folder ["mars_retrieve_total"](mars_retrieve_total/) contains python scripts for retrieving all datasets from the Copernicus Climate Change Service regional reanalysis for Europe reanalysis via the ECMWF MARS system.<br />
 The scripts are provided as a complete base showing all available data. Please note that this means a lot of data. Modify the time, parameters, levels etc. to match your specific needs.
 
+## CDS retrieval and plotting example
+The folder ["retrieve_and_plot_example"](retrieve_and_plot_example/) contains 2 scripts. One to retrieve some data from Copernicus Climate Change Service regional reanalysis for Europe via the CDS API. The other script plots the data on a map and optionally creates an animation of the resulting images.
+
 ## Create forcing data for NEMO-Nordic
 The folder ["create_forcing_for_NEMO"](create_forcing_for_NEMO/) contains a script system, which can be used to prepare forcing data for NEMO-Nordic (a regional ocean model). The scripts retrieve hourly data from MARS and mix analyses and forecasts. Then, the data is post-processed for the usage with NEMO-Nordic. For instance, relative humidity is transferred to specific humidity. At the end, the data is stored in netcdf-format as needed by NEMO.
