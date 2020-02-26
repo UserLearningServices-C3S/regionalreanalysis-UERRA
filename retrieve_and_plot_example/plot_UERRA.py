@@ -16,6 +16,9 @@ from mpl_toolkits.basemap import Basemap
 from cdo import *
 cdo   = Cdo()
 
+# subprocess
+import subprocess
+
 # NetCDF
 import netCDF4
 from netCDF4 import Dataset
