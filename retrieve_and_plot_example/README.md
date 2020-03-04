@@ -44,7 +44,7 @@ GRIB_API library version : 1.14.0
 netCDF library version : 4.3.2  
 HDF5 library version : 1.8.14  
 
-Moreover, to fetch data from CDS, you will need a account at [Copernicus Climate Data Store](https://cds.climate.copernicus.eu/).
+Moreover, to fetch data from CDS, you will need an account at [Copernicus Climate Data Store](https://cds.climate.copernicus.eu/).
 
 ## General information
 This project contains example code for users of the Copernicus Climate Change Service regional reanalysis for Europe (C3S_322_Lot1) data.
